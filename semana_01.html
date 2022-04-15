@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            background: #1A5FB4;
+        }
+        
+        .container {
+            position: relative;
+            background: #ddd;
+            width: 540px;
+            height: 480px;
+            margin: auto;
+            border: 5px solid #05285B;
+            border-radius: 15px;
+        }
+    
+        #login {
+            width: 140px;
+            padding: 20px 200px;
+            margin: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .input {
+            width: 170px;
+            padding: 10px 185px; 
+            font-size: 18px;
+        }
+
+        .container a {
+            text-decoration: none;
+            position: relative;
+            left: 218px;
+        }
+
+        .container a:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .btn {
+            position: relative;
+            background: #E6D11F;
+            border: #D8C11A 1px solid;
+            border-radius: 3px;
+            height: 30px;
+            width: 200px;
+            left: 170px
+        }
+
+        .btn:hover {
+            background: orange;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #nova_conta {
+            color: #05285B;
+            position: relative;
+            left: 190px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="login">Login</h1>
+        <div class="input">
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email"
+            placeholder="emailexemplo@gmail.com">
+        </div>
+        <div class="input">
+            <label for="senha">Senha</label> <br>
+            <input type="text" id="senha" name="senha" 
+            placeholder="senhaexemplo">
+        </div>
+        <a href="#">Esqueceu sua senha?</a>
+        <br><br><br>
+        <button class="btn">Fazer Login</button>
+        <br>
+        <p id="nova_conta">Deseja criar nova conta?</p>
+        <button class="btn">Criar nova conta</button>
+    </div>
+</body>
+</html>
